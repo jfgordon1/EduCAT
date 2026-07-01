@@ -13,7 +13,7 @@ from CAT.model.abstract_model import AbstractModel
 from CAT.dataset import AdapTestDataset, TrainDataset, Dataset
 from sklearn.metrics import accuracy_score
 from collections import namedtuple
-from .utils import StraightThrough
+from CAT.model.utils import StraightThrough
 SavedAction = namedtuple('SavedAction', ['log_prob', 'value'])
 
 class IRT(nn.Module):
